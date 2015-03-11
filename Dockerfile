@@ -19,6 +19,7 @@ COPY tmp/* /tmp/
 COPY preboot/* /preboot/
 COPY services/* /etc/supervisord.d/
 
+WORKDIR /opt/logstash-forwarder
+ 
 VOLUME ["/logs"]
-
 ENV chef_node_name logstash-forwader.docker.local
