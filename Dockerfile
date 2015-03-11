@@ -14,7 +14,6 @@ RUN cd /tmp && \
 RUN  yum -y install openssl && \
      yum -y clean all
 
-COPY storage/* /storage/
 COPY tmp/* /tmp/
 COPY preboot/* /preboot/
 COPY services/* /etc/supervisord.d/
