@@ -10,7 +10,9 @@
   "files": [
     {
       "paths": [
-        "/logs/*.log"
+        "/logs/*.log",
+        "/logs/messages",
+        "/logs/syslog"
       ],
       "fields": { "type": "lumberjack" }
     }
