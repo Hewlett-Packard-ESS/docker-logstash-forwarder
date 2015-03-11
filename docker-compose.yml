@@ -1,0 +1,9 @@
+logstashfw:
+  image: hpess/logstash-forwarder
+  environment:
+    logstash_ip:   '127.0.0.1'
+    logstash_port: '8080'
+    logstash_cn:   'logstash.local'
+  volumes:
+    - "./storage:/storage:ro"
+    - "/var/log:/logs:ro"

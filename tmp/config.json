@@ -1,0 +1,18 @@
+{
+  "network": {
+    "servers": [ "%logstash%" ],
+    "ssl certificate": "/storage/ssl/logstash-forwarder.crt",
+    "ssl key": "/storage/ssl/logstash-forwarder.key",
+    "ssl ca": "/storage/ssl/logstash-forwarder.crt",
+    "timeout": 15
+  },
+
+  "files": [
+    {
+      "paths": [
+        "/logs/*.log"
+      ],
+      "fields": { "type": "lumberjack" }
+    }
+  ]
+}
