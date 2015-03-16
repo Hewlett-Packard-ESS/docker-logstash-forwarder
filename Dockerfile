@@ -1,4 +1,4 @@
-FROM hpess/golang
+FROM hpess/golang:master
 MAINTAINER Karl Stoney <karl.stoney@hp.com> 
 
 # Download and Compile it
