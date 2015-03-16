@@ -1,4 +1,5 @@
-## hpess/logstash-forwarder
+![Logstash Forwarder](/logstash.png?raw=true "Logstash Forwarder")
+
 This container is a docker implementation of [Logstash Forwarder](https://github.com/elastic/logstash-forwarder) for sending file based logs to a central logstash server in a secure and fast way.
 
 ## Use
@@ -23,4 +24,6 @@ Logstash forwarder uses SSL certificates to validate against the Logstash server
 You will need to ensure that the listening end is configured to use the same crt and key.  See https://github.com/elastic/logstash-forwarder/blob/master/README.md#use-with-logstash
 
 ## License
-This application is distributed unter the MIT License (MIT)
+This docker container is distributed unter the MIT License (MIT).
+
+Logstash Forwarder is licensed under the [Apache 2](https://github.com/elastic/logstash-forwarder/blob/master/LICENSE) License.
