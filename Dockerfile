@@ -11,8 +11,8 @@ RUN cd /tmp && \
     rm -rf /tmp/logstash-* && \
     rm -rf /tmp/v0.4*
 
-RUN  yum -y install openssl && \
-     yum -y clean all
+RUN  yum -y -q install openssl && \
+     yum -y -q clean all
 
 COPY tmp/* /tmp/
 COPY preboot/* /preboot/
