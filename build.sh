@@ -1,1 +1,1 @@
-docker build -t hpess/logstash-forwarder:latest .
+docker build -t hpess/logstash-forwarder:master .
